@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостійна робота №2</title>
+    <script src="https://kit.fontawesome.com/26e3ee569a.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+</head>
+<body>
+    <header></header>
+    <main>
+    <h1>Самостійна робота №2</h1>
+    <h2>Гармаш Максим ІС-31</h2> <br>
+    <div>
+        <h1 style = "color:purple">1.1 CSS Синтаксис</h1>
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS Синтаксис </h2>
+        <p class="pr1">Hello World!</p>
+        <style>
+            .pr1 {
+              color: red;
+              text-align: center;
+            } 
+        </style>
+        <br>
+    </div>
+    
+    <div>
+        <h1 style = "color:purple">1.2 CSS Селектори</h1>
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS селектор елемента </h2>
+        <p class="pr2">Кожен параграф буде залежати від стилю.</p>
+        <p class="pr2" id="para1">Я теж!</p>
+        <p class="pr2">І я!</p>
+        <style>
+            .pr2 {
+              text-align: center;
+              color: red;
+            } 
+        </style>
+
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS селектор id </h2>
+        <p id="para1">Hello World!</p>
+        <p>Цей параграф не залежить від стилю.</p>
+        <style>
+            #para1 {
+              text-align: center;
+              color: red;
+            }
+        </style>
+
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS селектор class </h2>
+        <h1 class="center">Червоний заголовок по центру</h1>
+        <p class="center">Червоний параграф по центру.</p>
+        <style>
+            .center {
+                text-align: center;
+                color: red;
+        }
+        </style>
+        <br>
+    </div>
+
+    <div>
+        <h1 style = "color:purple">1.3 CSS Кольори</h1>
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS Background Color - Колір фону </h2>
+        <h1 style="background-color:orangered;">Hello World</h1>
+        <p style="background-color:Tomato;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </p>
+
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS Text Color - Колір тексту </h2>
+        <h1 style="color:Tomato;">Hello World</h1>
+        <p style="color:orangered;">Lorem ipsum...</p>
+        <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS Border Color - Колір межі </h2>
+        <h1 style="border: 2px solid Tomato;">Hello World</h1>
+        <h1 style="border: 2px solid orangered;">Hello World</h1>
+        <h1 style="border: 2px solid Violet;">Hello World</h1>
+
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS Значення кольору </h2>
+        <h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+        <h1 style="background-color:#ff6347;">#ff6347</h1>
+        <h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>  
+        <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: RGB Значення </h2>
+        <h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+        <h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+        <h1 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+        <h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+        <h1 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+        <h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: HEX Значення </h2>
+        <h1 style="background-color:#ff0000;">#ff0000</h1>
+        <h1 style="background-color:#0000ff;">#0000ff</h1>
+        <h1 style="background-color:#3cb371;">#3cb371</h1>
+        <h1 style="background-color:#ee82ee;">#ee82ee</h1>
+        <h1 style="background-color:#ffa500;">#ffa500</h1>
+        <h1 style="background-color:#6a5acd;">#6a5acd</h1>
+
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: HSL Значення </h2>
+        <h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+        <h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+        <h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+        <br>
+    </div>
+
+    <div>
+        <h1 style = "color:purple">1.4 CSS Фони</h1>
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS background-color - Колір фону </h2>
+        <p>Ця сторінка має блакитний фон!</p>
+        <style>
+            body {
+              background-color: rgb(228, 243, 163);
+            }
+        </style>
+
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: Інші елементи </h2>
+        <h1 class="pr3_h1">CSS background-color приклад!</h1>
+        <div class="pr3_div">
+            Це текст всередині елемента div.
+            <p class="pr3_p">Цей параграф має власний колір фону.</p>
+            Ми все ще знаходимося всередині елемента div.
+        </div>
+        <style>
+            .pr3_h1 {
+              background-color: green;
+            }
+            .pr3_div {
+              background-color: orangered;
+            }
+            .pr3_p {
+              background-color: yellow;
+            }
+        </style>
+
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: Opacity / Transparency - Непрозорість / Прозорість </h2>
+        <div class="first">
+            <h1>opacity 0.1</h1>
+        </div>
+          
+        <div class="second">
+            <h1>opacity 0.3</h1>
+        </div>
+          
+        <div class="third">
+            <h1>opacity 0.6</h1>
+        </div>
+          
+        <div class="forth">
+            <h1>opacity 1</h1>
+        </div>
+        <style>
+            div.first, div.second, div.third, div.forth {
+              background-color: green;
+            }
+            div.first {
+              opacity: 0.1;
+            }
+            div.second {
+              opacity: 0.3;
+            }
+            div.third {
+              opacity: 0.6;
+            }
+        </style>
+        <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">1.5 CSS Межі</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Стиль CSS Межі </h2>
+      <p class="dotted">Крапкова межа.</p>
+      <p class="dashed">Пунктирна межа.</p>
+      <p class="solid">Суцільна межа.</p>
+      <p class="double">Подвійна межа.</p>
+      <p class="groove">Рифлена межа.</p>
+      <p class="ridge">Ребриста межа.</p>
+      <p class="inset">Вставна межа.</p>
+      <p class="outset">Випукла межа.</p>
+      <p class="none">Немає межі.</p>
+      <p class="hidden">Прихована межа.</p>
+      <p class="mix">Змішана межа.</p>
+      <style>
+        p.dotted {border-style: dotted;}
+        p.dashed {border-style: dashed;}
+        p.solid {border-style: solid;}
+        p.double {border-style: double;}
+        p.groove {border-style: groove;}
+        p.ridge {border-style: ridge;}
+        p.inset {border-style: inset;}
+        p.outset {border-style: outset;}
+        p.none {border-style: none;}
+        p.hidden {border-style: hidden;}
+        p.mix {border-style: dotted dashed solid double;}
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS Border Width - Ширина межі </h2>
+      <p class="one">Якийсь текст.</p>
+      <p class="two">Якийсь текст.</p>
+      <p class="three">Якийсь текст.</p>
+      <p class="four">Якийсь текст.</p>
+      <p class="five">Якийсь текст.</p>
+      <p class="six">Якийсь текст.</p>
+      <style>
+        p.one {
+          border-style: solid;
+          border-width: 5px;
+        }
+        
+        p.two {
+          border-style: solid;
+          border-width: medium;
+        }
+        
+        p.three {
+          border-style: dotted;
+          border-width: 2px;
+        }
+        
+        p.four {
+          border-style: dotted;
+          border-width: thick;
+        }
+        
+        p.five {
+          border-style: double;
+          border-width: 15px;
+        }
+        
+        p.six {
+          border-style: double;
+          border-width: thick;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS Колір межі </h2>
+      <p class="seven">Червона межа</p>
+      <p class="eight">Зелена межа</p>
+      <p class="nine">Синя межа</p>
+      <style>
+        p.seven {
+          border-style: solid;
+          border-color: red;
+        }
+        
+        p.eight {
+          border-style: solid;
+          border-color: green;
+        }
+        
+        p.nine {
+          border-style: dotted;
+          border-color: blue;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS Закруглені межі </h2>
+      <p class="normal">Звичайна межа</p>
+      <p class="round1">Закруглена межа</p>
+      <p class="round2">Більш закруглена межа</p>
+      <p class="round3">Ще більш закруглена межа</p>
+      <style>
+        p.normal {
+          border: 2px solid red;
+        }
+        
+        p.round1 {
+          border: 2px solid red;
+          border-radius: 5px;
+        }
+        
+        p.round2 {
+          border: 2px solid red;
+          border-radius: 8px;
+        }
+        
+        p.round3 {
+          border: 2px solid red;
+          border-radius: 12px;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">1.6 CSS Поля</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Margin - Окремі сторони </h2>
+      <div class="diffsides">Цей елемент div має верхнє поле 100px, праве поле 150px, нижнє поле 100px та ліве поле 80px.</div>
+      <style>
+        div.diffsides {
+          border: 1px solid black;
+          margin-top: 100px;
+          margin-bottom: 100px;
+          margin-right: 150px;
+          margin-left: 80px;
+          background-color: orangered;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Margin - Скорочена властивість </h2>
+      <div class="short">Скороченя властивість.</div>
+      <style>
+        div.short {
+          border: 1px solid black;
+          margin: 25px 50px 75px 100px;
+          background-color: orangered;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Значення auto </h2>
+      <div class="auto">
+        Цей div буде центрований горизонталлю, тому що в ньому margin: auto;
+      </div>
+      <style>
+        div.auto {
+          width:300px;
+          margin: auto;
+          border: 1px solid red;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Margin Collapse - Згортання полів </h2>
+      <h1 class="zgort">Заголовок 1</h1>
+      <h2 class="zgort">Заголовок 2</h2>
+      <style>
+        h1.zgort {
+          margin: 0 0 50px 0;
+        }
+        
+        h2.zgort {
+          margin: 20px 0 0 0;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">1.8 CSS Padding - Внутрішній відступ</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Padding - Окремі сторони </h2>
+      <div class="diff">Цей елемент div має верхній відступ 50 пікселів, правий відступ 30 пікселів, нижній відступ 50 пікселів та лівий відступ 80 пікселів.</div>
+      <style>
+        div.diff {
+          border: 1px solid black;
+          background-color: orangered;
+          padding-top: 50px;
+          padding-right: 30px;
+          padding-bottom: 50px;
+          padding-left: 80px;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Padding - Скорочена властивість </h2>
+      <div class="short2">Скорочена властивість.</div>
+      <style>
+        div.short2 {
+          border: 1px solid black;
+          padding: 25px 50px 75px 100px;
+          background-color: orangered;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Padding та Width </h2>
+      <div class="e1">Цей div має ширину 300 пікселів.</div>
+      <br>
+      <div class="e2">Ширина цього div складає 350 пікселів, хоча в CSS він визначений як 300 пікселів.</div>
+      <style>
+        div.e1 {
+          width: 300px;
+          background-color: yellow;
+        }
+        
+        div.e2 {
+          width: 300px;
+          padding: 25px;
+          background-color: orangered;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">1.9 CSS Висота, ширина і максимальна ширина</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS height/width </h2>
+      <p class="e3">Цей елемент div має висоту 200 пікселів та ширину 50%:</p>
+      <style>
+        div.e3 {
+          height: 200px;
+          width: 50%;
+          background-color: powderblue;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Встановлення максимальної ширини - max-width </h2>
+      <div class="maxwidth"></div>
+      <style>
+        div.maxwidth {
+          max-width: 500px;
+          height: 100px;
+          background-color: orangered;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">1.10 CSS Блочна модель></h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS Блочна модель </h2>
+      <div class="e4">Цей безглуздий текст є вмістом блоку. Ми додали відступ 50 пікселів, поле 20 пікселів та зелений кордон 15 пікселів. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor у reprehenderit в voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <style>
+        div.e4 {
+          background-color: lightgrey;
+          width: 300px;
+          border: 15px solid green;
+          padding: 50px;
+          margin: 20px;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">1.11 CSS Іконки</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Font Awesome Іконки </h2>
+      <i class="fas fa-cloud"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-car"></i>
+      <i class="fas fa-file"></i>
+      <i class="fas fa-bars"></i>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Bootstrap іконки </h2>
+      <i class="glyphicon glyphicon-cloud"></i>
+      <i class="glyphicon glyphicon-remove"></i>
+      <i class="glyphicon glyphicon-user"></i>
+      <i class="glyphicon glyphicon-envelope"></i>
+      <i class="glyphicon glyphicon-thumbs-up"></i>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Bootstrap іконки </h2>
+      <i class="material-icons">cloud</i>
+      <i class="material-icons">favorite</i>
+      <i class="material-icons">attachment</i>
+      <i class="material-icons">computer</i>
+      <i class="material-icons">traffic</i>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">1.12 CSS Посилання</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Стилізація посилань </h2>
+      <p><b><a class="e5" href="index.html" target="_blank">Це посилання</a></b></p>
+      <style>
+        a.e5:link {
+          color: red;
+        }
+
+        a.e5:visited {
+          color: green;
+        }
+
+        a.e5:hover {
+          color: hotpink;
+        }
+
+        a.e5:active {
+          color: blue;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Text Decoration - Оформлення тексту </h2>
+      <p><b><a class="e6" href="index.html" target="_blank">Це посилання</a></b></p>
+      <style>
+        a.e6:link {
+          text-decoration: none;
+        }
+        
+        a.e6:visited {
+          text-decoration: none;
+        }
+        
+        a.e6:hover {
+          text-decoration: underline;
+        }
+        
+        a.e6:active {
+          text-decoration: underline;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Background Color - Колір фону </h2>
+      <p><b><a class="e7" href="index.html" target="_blank">Це посилання</a></b></p>
+      <style>
+        a.e7:link {
+          background-color: yellow;
+        }
+        
+        a.e7:visited {
+          background-color: cyan;
+        }
+        
+        a.e7:hover {
+          background-color: lightgreen;
+        }
+        
+        a.e7:active {
+          background-color: hotpink;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Кнопки-посилання </h2>
+      <p><b><a class="e8" href="index.html" target="_blank">Це посилання</a></b></p>
+      <style>
+        a.e8:link, a.e8:visited {
+          background-color: #f44336;
+          color: white;
+          padding: 14px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+        }
+        
+        a.e8:hover, a.e8:active {
+          background-color: red;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">1.13 CSS Списки</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Різні маркери списку </h2>
+      <ul class="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+      
+      <ul class="b">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+
+      <ol class="c">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+      
+      <ol class="d">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+      <style>
+        ul.a {
+          list-style-type: circle;
+        }
+        
+        ul.b {
+          list-style-type: square;
+        }
+        
+        ol.c {
+          list-style-type: upper-roman;
+        }
+        
+        ol.d {
+          list-style-type: lower-alpha;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Список стилів з кольорами </h2>  
+      <ol class="e9">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+      
+      <ul class="e9">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+      <style>
+        ol.e9 {
+          background: #ff9999;
+          padding: 20px;
+        }
+        
+        ul.e9 {
+          background: #3399ff;
+          padding: 20px;
+        }
+        
+        ol.e9 li {
+          background: #ffe5e5;
+          padding: 5px;
+          margin-left: 35px;
+        }
+        
+        ul.e9 li {
+          background: #cce5ff;
+          margin: 5px;
+        }
+      </style>
+      
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">1.14	CSS Таблиці.Межі</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Межі таблиці </h2>
+      <table class="e10">
+        <tr class="e10">
+          <th class="e10">Firstname</th>
+          <th class="e10">Lastname</th>
+        </tr>
+        <tr class="e10">
+          <td class="e10">Peter</td>
+          <td class="e10">Griffin</td>
+        </tr>
+        <tr class="e10">
+          <td class="e10">Lois</td>
+          <td class="e10">Griffin</td>
+        </tr>
+      </table>
+      <style>
+        table.e10 {
+          width: 100%;
+          border-collapse: collapse;
+        }
+        table.e10, th.e10, td.e10 {
+          border: 1px solid black;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">1.14.1 CSS Розмір таблиці. </h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Ширина та висота таблиці</h2>
+      <table class="e11">
+        <tr class="e11">
+          <th class="e11">Ім'я</th>
+          <th class="e11">Прізвище</th>
+          <th class="e11">Зарабіток</th>
+        </tr>
+        <tr class="e11">
+          <td class="e11">Peter</td>
+          <td class="e11">Griffin</td>
+          <td class="e11">$100</td>
+        </tr>
+        <tr class="e11">
+          <td class="e11">Lois</td>
+          <td class="e11">Griffin</td>
+          <td class="e11">$150</td>
+        </tr>
+        <tr class="e11">
+          <td class="e11">Joe</td>
+          <td class="e11">Swanson</td>
+          <td class="e11">$300</td>
+        </tr>
+        <tr class="e11">
+          <td class="e11">Cleveland</td>
+          <td class="e11">Brown</td>
+          <td class="e11">$250</td>
+        </tr>
+      </table>
+      <style>
+        table.e11, td.e11, th.e11 {
+          border: 1px solid black;
+        }
+        
+        table.e11 {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th.e11 {
+          height: 70px;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">1.14.2 CSS Вирівнювання в таблиці</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Горизонтальне вирівнювання </h2>
+      <table class="e12">
+        <tr class="e12">
+          <th class="e12">Ім'я</th>
+          <th class="e12">Прізвище</th>
+          <th class="e12">Зарабіток</th>
+        </tr>
+        <tr class="e12">
+          <td class="e12">Peter</td>
+          <td class="e12">Griffin</td>
+          <td class="e12">$100</td>
+        </tr>
+        <tr class="e12">
+          <td class="e12">Lois</td>
+          <td class="e12">Griffin</td>
+          <td class="e12">$150</td>
+        </tr>
+        <tr class="e12">
+          <td class="e12">Joe</td>
+          <td class="e12">Swanson</td>
+          <td class="e12">$300</td>
+        </tr>
+        <tr class="e12">
+          <td class="e12">Cleveland</td>
+          <td class="e12">Brown</td>
+          <td class="e12">$250</td>
+        </tr>
+      </table>
+      <style>
+        table.e12, td.e12, th.e12 {
+          border: 1px solid black;
+        }
+        
+        table.e12 {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td.e12 {
+          text-align: center;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Горизонтальне вирівнювання </h2>
+      <table class="e13">
+        <tr class="e13">
+          <th class="e13">Ім'я</th>
+          <th class="e13">Прізвище</th>
+          <th class="e13">Зарабіток</th>
+        </tr>
+        <tr class="e13">
+          <td class="e13">Peter</td>
+          <td class="e13">Griffin</td>
+          <td class="e13">$100</td>
+        </tr>
+        <tr class="e13">
+          <td class="e13">Lois</td>
+          <td class="e13">Griffin</td>
+          <td class="e13">$150</td>
+        </tr>
+        <tr class="e13">
+          <td class="e13">Joe</td>
+          <td class="e13">Swanson</td>
+          <td class="e13">$300</td>
+        </tr>
+        <tr class="e13">
+          <td class="e13">Cleveland</td>
+          <td class="e13">Brown</td>
+          <td class="e13">$250</td>
+        </tr>
+      </table>
+      <style>
+        table.e13, td.e13, th.e13 {
+          border: 1px solid black;
+        }
+        
+        table.e13 {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td.e13 {
+          height: 50px;
+          vertical-align: bottom;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">1.14.3 CSS Стиль таблиці</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Відступи в таблиці - padding </h2>
+      <table class="e14">
+        <tr class="e14">
+          <th class="e14">Ім'я</th>
+          <th class="e14">Прізвище</th>
+          <th class="e14">Зарабіток</th>
+        </tr>
+        <tr class="e14">
+          <td class="e14">Peter</td>
+          <td class="e14">Griffin</td>
+          <td class="e14">$100</td>
+        </tr>
+        <tr class="e14">
+          <td class="e14">Lois</td>
+          <td class="e14">Griffin</td>
+          <td class="e14">$150</td>
+        </tr>
+        <tr class="e14">
+          <td class="e14">Joe</td>
+          <td class="e14">Swanson</td>
+          <td class="e14">$300</td>
+        </tr>
+        <tr class="e14">
+          <td class="e14">Cleveland</td>
+          <td class="e14">Brown</td>
+          <td class="e14">$250</td>
+        </tr>
+      </table>
+      <style>
+        table.e14, td.e14, th.e14 {
+          border: 1px solid #000;
+          text-align: left;
+        }
+        
+        table.e14 {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th.e14, td.e14 {
+          padding: 15px;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Горизонтальні роздільники </h2>
+      <table class="e15">
+        <tr class="e15">
+          <th class="e15">Ім'я</th>
+          <th class="e15">Прізвище</th>
+          <th class="e15">Зарабіток</th>
+        </tr>
+        <tr class="e15">
+          <td class="e15">Peter</td>
+          <td class="e15">Griffin</td>
+          <td class="e15">$100</td>
+        </tr>
+        <tr class="e15">
+          <td class="e15">Lois</td>
+          <td class="e15">Griffin</td>
+          <td class="e15">$150</td>
+        </tr>
+        <tr class="e15">
+          <td class="e15">Joe</td>
+          <td class="e15">Swanson</td>
+          <td class="e15">$300</td>
+        </tr>
+        <tr class="e15">
+          <td class="e15">Cleveland</td>
+          <td class="e15">Brown</td>
+          <td class="e15">$250</td>
+        </tr>
+      </table>
+      <style>
+        table.e15 {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th.e15, td.e15 {
+          padding: 8px;
+          text-align: left;
+          border-bottom: 1px solid #000;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Виділення рядків таблиці при наведенні </h2>
+      <table class="e16">
+        <tr class="e16">
+          <th class="e16">Ім'я</th>
+          <th class="e16">Прізвище</th>
+          <th class="e16">Зарабіток</th>
+        </tr>
+        <tr class="e16">
+          <td class="e16">Peter</td>
+          <td class="e16">Griffin</td>
+          <td class="e16">$100</td>
+        </tr>
+        <tr class="e16">
+          <td class="e16">Lois</td>
+          <td class="e16">Griffin</td>
+          <td class="e16">$150</td>
+        </tr>
+        <tr class="e16">
+          <td class="e16">Joe</td>
+          <td class="e16">Swanson</td>
+          <td class="e16">$300</td>
+        </tr>
+        <tr class="e16">
+          <td class="e16">Cleveland</td>
+          <td class="e16">Brown</td>
+          <td class="e16">$250</td>
+        </tr>
+      </table>
+      <style>
+        table.e16 {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th.e16, td.e16 {
+          padding: 8px;
+          text-align: left;
+          border-bottom: 1px solid #000;
+        }
+        
+        tr.e16:hover {background-color:#f5f5f5;}
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Колір таблиці </h2>
+      <table class="e17">
+        <tr class="e17">
+          <th class="e17">Ім'я</th>
+          <th class="e17">Прізвище</th>
+          <th class="e17">Зарабіток</th>
+        </tr>
+        <tr class="e17">
+          <td class="e17">Peter</td>
+          <td class="e17">Griffin</td>
+          <td class="e17">$100</td>
+        </tr>
+        <tr class="e17">
+          <td class="e17">Lois</td>
+          <td class="e17">Griffin</td>
+          <td class="e17">$150</td>
+        </tr>
+        <tr class="e17">
+          <td class="e17">Joe</td>
+          <td class="e17">Swanson</td>
+          <td class="e17">$300</td>
+        </tr>
+        <tr class="e17">
+          <td class="e17">Cleveland</td>
+          <td class="e17">Brown</td>
+          <td class="e17">$250</td>
+        </tr>
+      </table>
+      <style>
+        table.e17 {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th.e17, td.e17 {
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr.e17:nth-child(even){background-color: #f2f2f2}
+        
+        th.e17 {
+          background-color: #4CAF50;
+          color: white;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">1.14.4 CSS Адаптивна таблиця</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Адаптивна таблиця </h2>
+      <div style="overflow-x:auto;">
+        <table class="e18">
+          <tr class="e18">
+            <th class="e18">First Name</th>
+            <th class="e18">Last Name</th>
+            <th class="e18">Points</th>
+            <th class="e18">Points</th>
+            <th class="e18">Points</th>
+            <th class="e18">Points</th>
+            <th class="e18">Points</th>
+            <th class="e18">Points</th>
+            <th class="e18">Points</th>
+            <th class="e18">Points</th>
+            <th class="e18">Points</th>
+            <th class="e18">Points</th>
+          </tr>
+          <tr class="e18">
+            <td class="e18">Jill</td>
+            <td class="e18">Smith</td>
+            <td class="e18">50</td>
+            <td class="e18">50</td>
+            <td class="e18">50</td>
+            <td class="e18">50</td>
+            <td class="e18">50</td>
+            <td class="e18">50</td>
+            <td class="e18">50</td>
+            <td class="e18">50</td>
+            <td class="e18">50</td>
+            <td class="e18">50</td>
+          </tr>
+          <tr class="e18">
+            <td class="e18">Eve</td>
+            <td class="e18">Jackson</td>
+            <td class="e18">94</td>
+            <td class="e18">94</td>
+            <td class="e18">94</td>
+            <td class="e18">94</td>
+            <td class="e18">94</td>
+            <td class="e18">94</td>
+            <td class="e18">94</td>
+            <td class="e18">94</td>
+            <td class="e18">94</td>
+            <td class="e18">94</td>
+          </tr>
+          <tr class="e18">
+            <td class="e18">Adam</td>
+            <td class="e18">Johnson</td>
+            <td class="e18">67</td>
+            <td class="e18">67</td>
+            <td class="e18">67</td>
+            <td class="e18">67</td>
+            <td class="e18">67</td>
+            <td class="e18">67</td>
+            <td class="e18">67</td>
+            <td class="e18">67</td>
+            <td class="e18">67</td>
+            <td class="e18">67</td>
+          </tr>
+        </table>
+      </div>
+      <style>
+        table.e18 {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th.e18, td.e18 {
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr.e18:nth-child(even) {background-color: #f2f2f2;}
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">2.1 CSS Продвинутий. Заокруглені кути</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS border-radius </h2>
+      <p id="rcorners1">Rounded corners!</p>
+      <p id="rcorners2">Rounded corners!</p>
+      <style> 
+        #rcorners1 {
+          border-radius: 25px;
+          background: #73AD21;
+          padding: 20px; 
+          width: 200px;
+          height: 150px;  
+        }
+        
+        #rcorners2 {
+          border-radius: 25px;
+          border: 2px solid #73AD21;
+          padding: 20px; 
+          width: 200px;
+          height: 150px;  
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS border-radius - Specify Each Corner </h2>
+      <p id="rcorners1"></p>
+      <p id="rcorners2"></p>
+      <p id="rcorners3"></p>
+      <p id="rcorners4"></p>
+      <style> 
+        #rcorners1 {
+          border-radius: 15px 50px 30px 5px;
+          background: #73AD21;
+          padding: 20px; 
+          width: 200px;
+          height: 150px; 
+        }
+        
+        #rcorners2 {
+          border-radius: 15px 50px 30px;
+          background: #73AD21;
+          padding: 20px; 
+          width: 200px;
+          height: 150px; 
+        }
+        
+        #rcorners3 {
+          border-radius: 15px 50px;
+          background: #73AD21;
+          padding: 20px; 
+          width: 200px;
+          height: 150px; 
+        } 
+        
+        #rcorners4 {
+          border-radius: 15px;
+          background: #73AD21;
+          padding: 20px; 
+          width: 200px;
+          height: 150px; 
+        } 
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">2.2 CSS Продвинутий. Анімації</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: The @keyframes Rule </h2>
+      <div class="e19"></div>
+      <style> 
+        div.e19 {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          animation-name: example;
+          animation-duration: 4s;
+        }
+        
+        @keyframes example {
+          from {background-color: red;}
+          to {background-color: yellow;}
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Затримка анімації </h2>
+      <div class="e20"></div>
+      <style> 
+        div.e20 {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          position: relative;
+          animation-name: example;
+          animation-duration: 4s;
+          animation-delay: 2s;
+        }
+        
+        @keyframes example {
+          0%   {background-color:red; left:0px; top:0px;}
+          25%  {background-color:yellow; left:200px; top:0px;}
+          50%  {background-color:blue; left:200px; top:200px;}
+          75%  {background-color:green; left:0px; top:200px;}
+          100% {background-color:red; left:0px; top:0px;}
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Встановіть, скільки разів має запускатися анімація </h2>
+      <div class="e21"></div>
+      <style> 
+        div.e21 {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          position: relative;
+          animation-name: example;
+          animation-duration: 4s;
+          animation-iteration-count: 3;
+        }
+        
+        @keyframes example {
+          0%   {background-color:red; left:0px; top:0px;}
+          25%  {background-color:yellow; left:200px; top:0px;}
+          50%  {background-color:blue; left:200px; top:200px;}
+          75%  {background-color:green; left:0px; top:200px;}
+          100% {background-color:red; left:0px; top:0px;}
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Запуск анімації у зворотному напрямку або альтернативні цикли </h2>
+      <div class="e22"></div>
+      <style> 
+        div.e22 {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          position: relative;
+          animation-name: example;
+          animation-duration: 4s;
+          animation-direction: reverse;  
+        }
+        
+        @keyframes example {
+          0%   {background-color:red; left:0px; top:0px;}
+          25%  {background-color:yellow; left:200px; top:0px;}
+          50%  {background-color:blue; left:200px; top:200px;}
+          75%  {background-color:green; left:0px; top:200px;}
+          100% {background-color:red; left:0px; top:0px;}
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Укажіть криву швидкості анімації </h2>
+      <div class="e23" id="div1">linear</div>
+      <div class="e23" id="div2">ease</div>
+      <div class="e23" id="div3">ease-in</div>
+      <div class="e23" id="div4">ease-out</div>
+      <div class="e23" id="div5">ease-in-out</div>
+      <style> 
+        div.e23 {
+          width: 100px;
+          height: 50px;
+          background-color: red;
+          font-weight: bold;
+          position: relative;
+          animation: mymove 5s;
+          animation-fill-mode: forwards;
+        }
+        
+        #div1 {animation-timing-function: linear;}
+        #div2 {animation-timing-function: ease;}
+        #div3 {animation-timing-function: ease-in;}
+        #div4 {animation-timing-function: ease-out;}
+        #div5 {animation-timing-function: ease-in-out;}
+        
+        @keyframes mymove {
+          from {left: 0px;}
+          to {left: 300px;}
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">2.3 CSS Продвинутий. Підказки</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Звичайна підказка </h2>
+      <div class="example1">Hover over me
+        <span class="example1text">Tooltip text</span>
+      </div>
+      <style>
+        .example1 {
+          position: relative;
+          display: inline-block;
+          border-bottom: 1px dotted black;
+        }
+        
+        .example1 .example1text {
+          visibility: hidden;
+          width: 120px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+          position: absolute;
+          z-index: 1;
+        }
+        
+        .example1:hover .example1text {
+          visibility: visible;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Fade In Tooltips (Animation) </h2>
+      <div class="example2">Hover over me
+        <span class="example2text">Tooltip text</span>
+      </div>
+      <style>
+        .example2 {
+          position: relative;
+          display: inline-block;
+          border-bottom: 1px dotted black;
+        }
+        
+        .example2 .example2text {
+          visibility: hidden;
+          width: 120px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+          position: absolute;
+          z-index: 1;
+          bottom: 100%;
+          left: 50%;
+          margin-left: -60px;
+          opacity: 0;
+          transition: opacity 1s;
+        }
+        
+        .example2:hover .example2text {
+          visibility: visible;
+          opacity: 1;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">2.4 CSS Продвинутий. Кнопки</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Basic Button Styling </h2>
+      <button>Default Button</button>
+      <a href="#" class="button">Link Button</a>
+      <button class="button">Button</button>
+      <input type="button" class="button" value="Input Button">
+      <style>
+        .button {
+          background-color: #04AA6D;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Button Colors </h2>
+      <button class="button">Green</button>
+      <button class="button button2">Blue</button>
+      <button class="button button3">Red</button>
+      <button class="button button4">Gray</button>
+      <button class="button button5">Black</button>
+      <style>
+        .button {
+          background-color: #04AA6D; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        
+        .button2 {background-color: #008CBA;} /* Blue */
+        .button3 {background-color: #f44336;} /* Red */ 
+        .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+        .button5 {background-color: #555555;} /* Black */
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Button Sizes </h2>
+      <button class="e24 button6">10px</button>
+      <button class="e24 button7">12px</button>
+      <button class="e24 button8">16px</button>
+      <button class="e24 button9">20px</button>
+      <button class="e24 button10">24px</button>
+      <style>
+        .e24{
+          background-color: #04AA6D; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        
+        .button6 {font-size: 10px;}
+        .button7 {font-size: 12px;}
+        .button8 {font-size: 16px;}
+        .button9 {font-size: 20px;}
+        .button10 {font-size: 24px;}
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Rounded Buttons </h2>
+      <button class="e24 button11">2px</button>
+      <button class="e24 button12">4px</button>
+      <button class="e24 button13">8px</button>
+      <button class="e24 button14">12px</button>
+      <button class="e24 button15">50%</button>
+      <style>
+        .button11 {border-radius: 2px;}
+        .button12 {border-radius: 4px;}
+        .button13 {border-radius: 8px;}
+        .button14 {border-radius: 12px;}
+        .button15 {border-radius: 50%;}
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Hoverable Buttons </h2>
+      <button class="e24 button16">Green</button>
+      <style>
+        .button16 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #04AA6D;
+        }
+
+        .button16:hover {
+          background-color: #04AA6D;
+          color: white;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Disabled Buttons </h2>
+      <button class="e24">Normal Button</button>
+      <button class="e24 disabled">Disabled Button</button>
+      <style>
+        .disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Animated Buttons </h2>
+      <button class="e25" style="vertical-align:middle"><span>Hover </span></button>
+      <style>
+        .e25 {
+          display: inline-block;
+          border-radius: 4px;
+          background-color: #f4511e;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 28px;
+          padding: 20px;
+          width: 200px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+        
+        .e25 span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .e25 span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .e25:hover span {
+          padding-right: 25px;
+        }
+        
+        .e25:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">2.5 CSS Продвинутий. Пагінація</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Simple Pagination </h2>
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+      <style>
+        .pagination {
+          display: inline-block;
+        }
+        
+        .pagination a {
+          color: black;
+          float: left;
+          padding: 8px 16px;
+          text-decoration: none;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Rounded Active and Hoverable Buttons </h2>
+      <div class="pagination2">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+      <style>
+        .pagination2 {
+          display: inline-block;
+        }
+        
+        .pagination2 a {
+          color: black;
+          float: left;
+          padding: 8px 16px;
+          text-decoration: none;
+        }
+        
+        .pagination2 a.active {
+          background-color: #4CAF50;
+          color: white;
+          border-radius: 5px;
+        }
+        
+        .pagination2 a:hover:not(.active) {
+          background-color: #ddd;
+          border-radius: 5px;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Bordered Pagination </h2>
+      <div class="pagination3">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+      <style>
+        .pagination3 {
+          display: inline-block;
+        }
+        
+        .pagination3 a {
+          color: black;
+          float: left;
+          padding: 8px 16px;
+          text-decoration: none;
+          border: 1px solid #000;
+        }
+        
+        .pagination3 a.active {
+          background-color: #4CAF50;
+          color: white;
+          border: 1px solid #4CAF50;
+        }
+        
+        .pagination3 a:hover:not(.active) {background-color: #ddd;}
+        
+        .pagination3 a:first-child {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        
+        .pagination3 a:last-child {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">2.6 CSS Продвинутий. Створення стовпців</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Create Multiple Columns </h2>
+      <div class="newspaper">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+      </div>
+      <style>
+        .newspaper {
+          column-count: 3;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: CSS Column Rules </h2>
+      <div class="newspaper2">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+      </div>
+      <style>
+        .newspaper2 {
+          column-count: 3;
+          column-gap: 40px;
+          column-rule-style: solid;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">2.7 CSS Продвинутий. Випадаючі списки</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Basic Dropdown </h2>
+      <div class="dropdown">
+        <span>Mouse over me</span>
+        <div class="dropdown-content">
+        <p>Hello World!</p>
+        </div>
+      </div>
+      <style>
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          padding: 12px 16px;
+          z-index: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Dropdown Menu </h2>
+      <div class="dropdown2">
+        <button class="dropbtn2">Dropdown</button>
+        <div class="dropdown-content2">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        </div>
+      </div>
+      <style>
+        .dropbtn2 {
+          background-color: #4CAF50;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .dropdown2 {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content2 {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content2 a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content2 a:hover {background-color: #f1f1f1}
+        
+        .dropdown2:hover .dropdown-content2 {
+          display: block;
+        }
+        
+        .dropdown2:hover .dropbtn2 {
+          background-color: #3e8e41;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">2.8 CSS Продвинутий. Кольорові ключові слова</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: The transparent Keyword </h2>
+      <div class="e26">This div has a light green background.</div>
+      <br>
+      <div class="e27">This div has a transparent background.</div>
+      <br>
+      <style>
+        div.e26 { 
+          background-color: lightgreen;
+          border: 2px solid black;
+          padding: 15px;
+        }
+        
+        div.e27 { 
+          background-color: transparent;
+          border: 2px solid black;
+          padding: 15px;
+        } 
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: The currentcolor Keyword </h2>
+      <div class="e28">
+        This div element has a blue text color and a blue border.
+      </div>
+      <style>
+        div.e28 {
+          color: blue;
+          border: 10px solid currentcolor;
+          padding: 15px;  
+        }
+      </style>
+
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: The inherit Keyword </h2>
+      <div class="e29">Here, the <span class="e29">span element's</span> border settings will be inherited from the parent element.</div>
+      <br>
+      <div class="e29" style="border:2px dotted blue;">Here, the <span class="e29">span element's</span> border settings will also be inherited from the parent element.</div>
+      <style>
+        div.e29 {
+          border: 2px solid red;
+        }
+        
+        span.e29 {
+          border: inherit;
+        }
+      </style>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">2.9 CSS Продвинутий. Тіньові ефекти</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Text Shadow </h2>
+      <h1 class="e30">Text-shadow effect!</h1>
+      <style>
+        h1.e30 {
+          text-shadow: 2px 2px;
+        }
+      </style>
+      <h1 class="e31">Red text-shadow effect!</h1>
+      <style>
+        h1.e31 {
+          text-shadow: 2px 2px 5px red;
+        }
+      </style>
+      <h1 class="e32">Text-shadow with red neon glow!</h1>
+      <style>
+        h1.e32 {
+          text-shadow: 0 0 3px #FF0000;
+        }
+      </style>
+      <h1 class="e33">Border around text!</h1>
+      <style>
+        h1.e33 {
+          color: coral;
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">2.10 CSS Продвинутий. Box Shadow</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Box Shadow </h2>
+      <div class="e34">A div element with a lightblue box-shadow</div>
+      <style> 
+        div.e34 {
+          width: 300px;
+          height: 100px;
+          padding: 15px;
+          background-color: coral;
+          box-shadow: 10px 10px 5px 12px gray;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+      <h1 style = "color:purple">2.11 CSS Продвинутий. Переходи</h1>
+      <h2 style = "color: orangered; font-weight: 700;">Приклад: Звичайний перехід </h2>
+      <div class="e35"></div>
+      <style> 
+        div.e35 {
+          width: 100px;
+          height: 100px;
+          background: red;
+          transition: width 2s;
+        }
+        
+        div.e35:hover {
+          width: 300px;
+        }
+      </style>
+      <br>
+    </div>
+
+    <div>
+        <h1 style = "color:purple">2.12 CSS Продвинутий. Текстові ефекти</h1>
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: Text Overflow </h2>
+        <p class="test1">This is some long text that will not fit in the box</p>
+        <p class="test2">This is some long text that will not fit in the box</p>
+        <style> 
+          p.test1 {
+            white-space: nowrap; 
+            width: 200px; 
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: clip;
+          }
+          
+          p.test2 {
+            white-space: nowrap; 
+            width: 200px; 
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        </style>
+
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: Word Wrapping </h2>
+        <p class="test">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+        <style> 
+          p.test {
+            width: 11em; 
+            border: 1px solid #000000;
+            word-wrap: break-word;
+          }
+        </style>
+
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: Word Breaking </h2>
+        <p class="test3">This paragraph contains some text. This line will-break-at-hyphens.</p>
+        <p class="test4">This paragraph contains some text. The lines will break at any character.</p>
+        <style> 
+          p.test3 {
+            width: 140px; 
+            border: 1px solid #000000;
+            word-break: keep-all;
+          }
+          
+          p.test4 {
+            width: 140px; 
+            border: 1px solid #000000;
+            word-break: break-all;
+          }
+        </style>
+
+        <h2 style = "color: orangered; font-weight: 700;">Приклад: Writing Mode </h2>
+        <p class="test5">Some text with default writing-mode.</p>
+        <p>Some text with a span element with a <span class="test6">vertical-rl</span> writing-mode.</p>
+        <p class="test6">Some text with writing-mode: vertical-rl.</p>
+        <style> 
+          p.test5 {
+            writing-mode: horizontal-tb; 
+          }
+          
+          span.test6 {
+            writing-mode: vertical-rl; 
+          }
+          
+          p.test6 {
+            writing-mode: vertical-rl; 
+          }
+        </style>
+        <br>
+    </div>
+  </main>
+  <footer></footer>
+</body>
